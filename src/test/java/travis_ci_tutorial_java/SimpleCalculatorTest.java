@@ -11,4 +11,8 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.add(1, 1), 2);
 	}
+	public void testSubt() {
+		SimpleCalculator calc = new SimpleCalculator();
+		assertEquals(calc.subt(8, 6), 2);
+	}
 }
