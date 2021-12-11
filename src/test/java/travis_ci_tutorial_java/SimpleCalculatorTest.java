@@ -6,13 +6,19 @@ import org.junit.*;
 
 
 public class SimpleCalculatorTest {
+	SimpleCalculator calc = new SimpleCalculator();
+	int a; int b;
 	@Test
 	public void testAdd() {
-		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.add(1, 1), 2);
+		assertEquals(calc.add(a , b), (a + b));
 	}
 	public void testSubt() {
-		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.subt(8, 6), 2);
+		assertEquals(calc.subt(a , b), (a - b));
+	}
+	public void testMult() {
+		assertEquals(calc.mult(a , b), (a * b));
+	}
+	public void testDiv() {
+		assertEquals(calc.div(a , b), (a / b));
 	}
 }
