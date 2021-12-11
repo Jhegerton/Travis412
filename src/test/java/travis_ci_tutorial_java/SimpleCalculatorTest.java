@@ -6,10 +6,9 @@ import org.junit.*;
 
 
 public class SimpleCalculatorTest {
-	final int SUM = 2;
 	@Test
 	public void testAdd() {
 		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.add(1, 1), SUM );
+		assertEquals(calc.add(1, 1), 0);
 	}
 }
